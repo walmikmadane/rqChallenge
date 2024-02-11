@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.rqchallenge.employees.controller.EmployeeControllerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2024-02-11T15:09:34" hostname="m-v21227v6cx" time="0.74">
+  <properties/>
+  <testcase name="getHighestSalaryOfEmployees_ValidRequest()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.284"/>
+  <testcase name="getAllEmployees_ErrorResponse()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.086"/>
+  <testcase name="getEmployeeById_ErrorResponse()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.088"/>
+  <testcase name="deleteEmployeeById_ErrorResponse()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.023"/>
+  <testcase name="getEmployeesByNameSearch_ValidRequest()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.038"/>
+  <testcase name="getEmployeeById_ValidRequest()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.031"/>
+  <testcase name="createEmployee_ValidRequest()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.048"/>
+  <testcase name="getAllEmployees_ValidRequest()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.019"/>
+  <testcase name="getHighestSalaryOfEmployees_ErrorResponse()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.016"/>
+  <testcase name="createEmployee_ErrorResponse()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.016"/>
+  <testcase name="getTopTenHighestEarningEmployeeNames_ValidRequest()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.02"/>
+  <testcase name="deleteEmployeeById_ValidRequest()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.02"/>
+  <testcase name="getTopTenHighestEarningEmployeeNames_ErrorResponse()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.02"/>
+  <testcase name="getEmployeesByNameSearch_ErrorResponse()" classname="com.example.rqchallenge.employees.controller.EmployeeControllerTest" time="0.017"/>
+  <system-out><![CDATA[2024-02-11 20:39:35.190  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.190  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.191  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-02-11 20:39:35.284  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.285  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.285  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.412  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.412  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.413  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.463  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.463  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.463  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.483  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.483  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.483  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.534  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.534  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.534  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.561  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.563  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.563  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.604  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.604  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.604  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.623  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.624  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.624  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.641  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.641  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.641  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.665  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.665  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.665  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.681  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.682  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.682  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.698  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.699  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.700  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-02-11 20:39:35.717  INFO 10602 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-02-11 20:39:35.718  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-11 20:39:35.718  INFO 10602 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

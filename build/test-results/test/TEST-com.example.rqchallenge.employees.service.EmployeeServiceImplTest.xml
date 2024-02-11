@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-02-11T11:43:29" hostname="m-v21227v6cx" time="0.474">
+<testsuite name="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-02-11T15:09:35" hostname="m-v21227v6cx" time="0.265">
   <properties/>
-  <testcase name="getEmployeeById_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.258"/>
-  <testcase name="getEmployeeById_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.081"/>
-  <testcase name="createEmployee_BadRequest()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.008"/>
-  <testcase name="getAllEmployees_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.015"/>
-  <testcase name="deleteEmployee_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.01"/>
-  <testcase name="deleteEmployee_NotFoundException()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.005"/>
-  <testcase name="getEmployeesByNameSearch_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.022"/>
-  <testcase name="getTop10HighestEarningEmployeeNames_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.008"/>
-  <testcase name="getAllEmployees_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.006"/>
-  <testcase name="getHighestSalaryOfEmployees_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.008"/>
-  <testcase name="createEmployee_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.007"/>
-  <testcase name="deleteEmployee_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.013"/>
-  <testcase name="createEmployee_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.012"/>
-  <system-out><![CDATA[2024-02-11 17:13:29.723  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
-2024-02-11 17:13:29.731 ERROR 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while fetching employee data for ID:1 , exception :509 Too many requests
-2024-02-11 17:13:29.813  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
-2024-02-11 17:13:29.813  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
-2024-02-11 17:13:29.822  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Create Request for Employee received.
-2024-02-11 17:13:29.844  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
-2024-02-11 17:13:29.845  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
-2024-02-11 17:13:29.856  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Delete request for employee with ID:1 received
-2024-02-11 17:13:29.857  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
-2024-02-11 17:13:29.857  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
-2024-02-11 17:13:29.862  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Delete request for employee with ID:1 received
-2024-02-11 17:13:29.863  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
-2024-02-11 17:13:29.863  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
-2024-02-11 17:13:29.863  INFO 36931 --- [    Test worker] c.e.r.employees.util.NullCheckUtil       : null
-2024-02-11 17:13:29.864 ERROR 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while fetching employee data for ID:1 , exception :Employee Not Found
-2024-02-11 17:13:29.864 ERROR 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while deleting employee data, exception :Employee Not Found
-2024-02-11 17:13:29.883  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for employee name search, name: Tiger
-2024-02-11 17:13:29.885  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
-2024-02-11 17:13:29.886  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
-2024-02-11 17:13:29.888  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Result for employee name search, name: Tiger, count:1
-2024-02-11 17:13:29.895  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for Top 10 highest salary employees received.
-2024-02-11 17:13:29.895  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
-2024-02-11 17:13:29.895  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
-2024-02-11 17:13:29.897  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for Top 10 highest salary employees completed.
-2024-02-11 17:13:29.903  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
-2024-02-11 17:13:29.903 ERROR 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while fetching employee list data , exception :509 Too many requests
-2024-02-11 17:13:29.912  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for highest salary received.
-2024-02-11 17:13:29.913  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
-2024-02-11 17:13:29.913  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
-2024-02-11 17:13:29.915  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for highest salary completed.
-2024-02-11 17:13:29.921  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Create Request for Employee received.
-2024-02-11 17:13:29.922 ERROR 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while creating employee data, exception :509 Too many requests
-2024-02-11 17:13:29.930  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Delete request for employee with ID:1 received
-2024-02-11 17:13:29.932  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
-2024-02-11 17:13:29.934  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
-2024-02-11 17:13:29.935 ERROR 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while deleting employee data, exception :509 Too many requests
-2024-02-11 17:13:29.949  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Create Request for Employee received.
-2024-02-11 17:13:29.950  INFO 36931 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employee Created successfully
+  <testcase name="getEmployeeById_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.139"/>
+  <testcase name="getEmployeeById_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.011"/>
+  <testcase name="createEmployee_BadRequest()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.009"/>
+  <testcase name="getAllEmployees_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.005"/>
+  <testcase name="deleteEmployee_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.012"/>
+  <testcase name="deleteEmployee_NotFoundException()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.012"/>
+  <testcase name="getEmployeesByNameSearch_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.007"/>
+  <testcase name="getTop10HighestEarningEmployeeNames_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.007"/>
+  <testcase name="getAllEmployees_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.003"/>
+  <testcase name="getHighestSalaryOfEmployees_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.009"/>
+  <testcase name="createEmployee_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.009"/>
+  <testcase name="deleteEmployee_Exception()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.007"/>
+  <testcase name="createEmployee_Success()" classname="com.example.rqchallenge.employees.service.EmployeeServiceImplTest" time="0.016"/>
+  <system-out><![CDATA[2024-02-11 20:39:35.861  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
+2024-02-11 20:39:35.869 ERROR 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while fetching employee data for ID:1 , exception :509 Too many requests
+2024-02-11 20:39:35.876  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
+2024-02-11 20:39:35.878  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
+2024-02-11 20:39:35.885  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Create Request for Employee received.
+2024-02-11 20:39:35.897  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
+2024-02-11 20:39:35.898  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
+2024-02-11 20:39:35.911  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Delete request for employee with ID:1 received
+2024-02-11 20:39:35.911  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
+2024-02-11 20:39:35.911  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
+2024-02-11 20:39:35.920  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Delete request for employee with ID:1 received
+2024-02-11 20:39:35.923  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
+2024-02-11 20:39:35.924  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
+2024-02-11 20:39:35.925  INFO 10602 --- [    Test worker] c.e.r.employees.util.NullCheckUtil       : null
+2024-02-11 20:39:35.925 ERROR 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while fetching employee data for ID:1 , exception :Employee Not Found
+2024-02-11 20:39:35.927 ERROR 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while deleting employee data, exception :Employee Not Found
+2024-02-11 20:39:35.935  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for employee name search, name: Tiger
+2024-02-11 20:39:35.936  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
+2024-02-11 20:39:35.936  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
+2024-02-11 20:39:35.937  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Result for employee name search, name: Tiger, count:1
+2024-02-11 20:39:35.944  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for Top 10 highest salary employees received.
+2024-02-11 20:39:35.944  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
+2024-02-11 20:39:35.945  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
+2024-02-11 20:39:35.947  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for Top 10 highest salary employees completed.
+2024-02-11 20:39:35.950  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
+2024-02-11 20:39:35.950 ERROR 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while fetching employee list data , exception :509 Too many requests
+2024-02-11 20:39:35.958  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for highest salary received.
+2024-02-11 20:39:35.958  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching all employee data.
+2024-02-11 20:39:35.958  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employees Data fetched successfully.
+2024-02-11 20:39:35.960  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Request for highest salary completed.
+2024-02-11 20:39:35.968  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Create Request for Employee received.
+2024-02-11 20:39:35.971 ERROR 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while creating employee data, exception :509 Too many requests
+2024-02-11 20:39:35.977  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Delete request for employee with ID:1 received
+2024-02-11 20:39:35.977  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Fetching employee data for id:1
+2024-02-11 20:39:35.977  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Single Employee Data fetched successfully.
+2024-02-11 20:39:35.978 ERROR 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Error while deleting employee data, exception :509 Too many requests
+2024-02-11 20:39:35.990  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Create Request for Employee received.
+2024-02-11 20:39:35.992  INFO 10602 --- [    Test worker] c.e.r.e.s.impl.EmployeeServiceImpl       : Employee Created successfully
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

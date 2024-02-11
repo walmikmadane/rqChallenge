@@ -12,7 +12,7 @@ public class EmployeeRuntimeException extends RuntimeException{
     public Throwable exception;
     public List<String> errorMessages;
 
-    EmployeeRuntimeException(String message,HttpStatus httpStatus )
+    public EmployeeRuntimeException(String message, HttpStatus httpStatus)
     {
         super(message);
         this.httpStatus=httpStatus;
